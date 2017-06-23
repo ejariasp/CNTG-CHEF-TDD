@@ -1,6 +1,11 @@
-# Offense count: 5
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle, SupportedStyles, ConsistentQuotesInMultiline.
 # SupportedStyles: single_quotes, double_quotes
 Style/StringLiterals:
   EnforcedStyle: double_quotes
+
+# Configuration parameters: AllowHeredoc, AllowURI, URISchemes.
+# URISchemes: http, https
+Metrics/LineLength:
+  Max: 200
+  

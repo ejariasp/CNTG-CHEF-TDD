@@ -3,5 +3,5 @@ describe port(80) do
 end
 
 describe command("curl http://localhost") do
-  its(:stdout) { should match (/Welcome Home/) }
+  its(:stdout) { should match(/Welcome Home/) }
 end

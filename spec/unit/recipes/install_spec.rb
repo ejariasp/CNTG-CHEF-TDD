@@ -16,5 +16,9 @@ describe "httpd::install" do
     it "converges successfully" do
       expect { chef_run }.to_not raise_error
     end
+
+    it "httpd installed" do
+      expect(chef_run).to install_package("httpd")
+    end
   end
 end
